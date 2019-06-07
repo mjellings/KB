@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 //Auth::routes(['register' => false]);
-Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('articles', 'ArticleController', [

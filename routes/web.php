@@ -22,6 +22,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('articles', 'ArticleController', [
         'only' => ['index', 'show', 'create', 'store', 'update', 'delete']
     ]);
+
+    Route::resource('categories', 'CategoryController', [
+        'only' => ['index', 'show', 'create', 'store', 'update', 'delete']
+    ]);
     
 
     Route::get('/home', 'HomeController@index')->name('home');

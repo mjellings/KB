@@ -19,11 +19,14 @@ class ArticleController extends BaseController
     public function index() {
         $data = array();
 
-        $articles = Article::all();
+        $articles = Article::orderBy('created_at', 'DESC')->get();
         $data['articles'] = $articles;
 
         $categories = Category::all();
         $data['categories'] = $categories;
+
+        $tags = Tag::all();
+        $data['tags'] = $tags;
 
         return view('articles.index', $data);
     }

@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
 </head>
 <body>
     <div id="app">
@@ -34,7 +35,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         @auth
-                        <li><a href="/articles">Articles</a></li>
+                        <li><a href="/articles/create">Create Article</a></li>
                         @endauth
                     </ul>
 

@@ -19,22 +19,26 @@ use Illuminate\Routing\Router;
 */
 Route::get('/', function (Router $router) {
     return collect($router->getRoutes()->getRoutesByMethod()["GET"])->map(function($value, $key) {
-        return url($key);
-    })->values();   
+        if (substr($key, 0, 3) == 'api') {
+            return url($key);
+        }
+    })->filter()->values();   
 });
 
 Route::resource('categories', 'CategoryAPIController', [
-    'only' => ['index', 'show', 'store', 'update', 'delete']
+    'only' => ['index', 'show']
 ]);
 
 Route::resource('tags', 'TagAPIController', [
-    'only' => ['index', 'show', 'store', 'update', 'delete']
+    'only' => ['index', 'show']
 ]);
 
 Route::resource('articles', 'ArticleAPIController', [
-    'only' => ['index', 'show', 'store', 'update', 'delete']
+    'only' => ['index', 'show']
 ]);
 
+/*
 Route::resource('users', 'UserAPIController', [
     'only' => ['index', 'show', 'store', 'update', 'delete']
 ]);
+*/

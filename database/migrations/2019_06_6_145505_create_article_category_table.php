@@ -14,12 +14,12 @@ class CreateArticleCategoryTable extends Migration
     public function up()
     {
         Schema::create('article_category', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->timestamp('created_at');
             $table->timestamp('updated_at');
-            $table->unsignedBigInteger('article_id')->nullable();
+            $table->unsignedInteger('article_id')->nullable();
             $table->foreign('article_id')->references('id')->on('articles');
-            $table->unsignedBigInteger('category_id')->nullable();
+            $table->unsignedInteger('category_id')->nullable();
             $table->foreign('category_id')->references('id')->on('categories');
         });
     }

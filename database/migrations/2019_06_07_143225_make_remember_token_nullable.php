@@ -13,7 +13,10 @@ class MakeRememberTokenNullable extends Migration
      */
     public function up()
     {
-        $table->string('remember_token')->nullable()->change();
+        Schema::table('users', function($table)
+        {
+            $table->string('remember_token')->nullable()->change();
+        });
     }
 
     /**
@@ -23,6 +26,9 @@ class MakeRememberTokenNullable extends Migration
      */
     public function down()
     {
-        $table->string('remember_token')->change();
+        Schema::table('users', function($table)
+        {
+            $table->string('remember_token')->change();
+        });
     }
 }

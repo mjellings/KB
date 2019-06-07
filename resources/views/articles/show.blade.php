@@ -8,7 +8,7 @@
                     <div class="card-header">{{ $article->title }}</div>
     
                     <div class="card-body">
-                        {{ $article->body }}
+                        {!! $article->body !!}
                     </div>
 
                     <div class="card-footer">

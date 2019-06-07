@@ -37,13 +37,13 @@ class Article extends Model
      */
     public function categories()
     {
-        return $this->belongsToMany('App\Category');
+        return $this->belongsToMany('App\Category')->withTimestamps();
     }
     /**
      * Get the Tags for the Article.
      */
     public function tags()
     {
-        return $this->belongsToMany('App\Tag');
+        return $this->belongsToMany('App\Tag')->withTimestamps();
     }
 }

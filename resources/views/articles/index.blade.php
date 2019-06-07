@@ -9,7 +9,7 @@
                     <div class="card-header"><a href="/articles/{{ $article->id }}">{{ $article->title }}</a></div>
     
                     <div class="card-body">
-                        {{ $article->body }}
+                        {!! $article->body !!}
                     </div>
 
                     <div class="card-footer">
@@ -45,6 +45,8 @@
                     </div>
                 </div>
             </div>
+
+            
         </div>
     @empty
         <div class="row justify-content-center">
@@ -59,5 +61,6 @@
             </div>
         </div>
     @endforelse
+    
 </div>
 @endsection

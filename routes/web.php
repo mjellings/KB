@@ -15,12 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('articles', 'ArticleController', [
-    'only' => ['index', 'show', 'create', 'store', 'update', 'delete']
-]);
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('articles', 'ArticleController', [
+        'only' => ['index', 'show', 'create', 'store', 'update', 'delete']
+    ]);
+    
+
+    Route::get('/home', 'HomeController@index')->name('home');
+});
 
 /*
 Route::group(['middleware' => 'auth'], function () {

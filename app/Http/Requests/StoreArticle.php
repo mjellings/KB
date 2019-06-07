@@ -42,7 +42,7 @@ class StoreArticle extends FormRequest
             'title.required' => 'Article title is required!',
             'body.required' => 'Articles must have content.',
             'category.required' => 'Please select a category.',
-            'tags.required' => 'Please select one of more tags.'
+            'tags.required' => 'Please select one or more tags.'
         ];
     }
 }

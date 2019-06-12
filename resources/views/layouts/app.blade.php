@@ -59,8 +59,8 @@
                                     
                                     <a href="/articles/create" class="dropdown-item">Create Article</a>
                                     <a class="dropdown-item" href="/categories">Categories</a>
-                                
-                                
+                                    <a class="dropdown-item" href="/tags">Tags</a>
+
                                 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

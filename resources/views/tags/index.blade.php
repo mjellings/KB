@@ -8,15 +8,15 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            Categories
+                            Tags
                         </div>
 
                         <div class="card-body">
                             <ul>
-                            @forelse ($categories as $category)
-                                <li>{{ $category->title }}</li>
+                            @forelse ($tags as $tag)
+                                <li>{{ $tag->title }}</li>
                             @empty
-                                <li>No categories yet!</li>
+                                <li>No tags yet!</li>
                             @endforelse
                             </ul>
                         </div>
@@ -29,11 +29,11 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            Create new category
+                            Create new tag
                         </div>
 
                         <div class="card-body">
-                            <form method="POST" action="/categories">
+                            <form method="POST" action="/tags">
                                 @csrf
                                 <div class="form-group row">
                                     <label for="slug" class="col-md-2 col-form-label text-md-right">{{ __('Slug') }}</label>

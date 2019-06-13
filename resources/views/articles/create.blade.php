@@ -27,7 +27,7 @@
   
                               <div class="col-md-10">
                                 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-                                <textarea id="body_editor" name="body" class="form-control editor">{!! old('body') !!}</textarea>
+                                <textarea id="body_editor" rows="20" name="body" class="form-control editor">{!! old('body') !!}</textarea>
                                 <script>
                                   var editor_config = {
                                     path_absolute : "/",

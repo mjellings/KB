@@ -13,7 +13,7 @@
                             <div class="card-body">
                                 {!! $article->body !!}
 
-                                <p><a href="/articles/{{ $article->id }}/edit">Edit</a></p>
+                                
                             </div>
 
                             <div class="card-footer">

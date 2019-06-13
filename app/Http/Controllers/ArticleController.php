@@ -35,6 +35,12 @@ class ArticleController extends BaseController
     public function show($article) {
         $data = array();
         $data['article'] = Article::findOrFail($article);
+
+        $categories = Category::all();
+        $data['categories'] = $categories;
+
+        $tags = Tag::all();
+        $data['tags'] = $tags;
         return view('articles.show', $data);
     }
 

@@ -37,6 +37,7 @@ Route::resource('articles', 'ArticleAPIController', [
     'only' => ['index', 'show']
 ]);
 
+Route::get('/search', 'ArticleAPIController@search');
 /*
 Route::resource('users', 'UserAPIController', [
     'only' => ['index', 'show', 'store', 'update', 'delete']

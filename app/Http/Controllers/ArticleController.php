@@ -8,6 +8,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreArticle;
+use App\Http\Requests\UpdateArticle;
 use App\Article;
 use App\Category;
 use App\Tag;
@@ -67,5 +68,33 @@ class ArticleController extends BaseController
         $article->save();
 
         return redirect('articles');
+    }
+
+    public function edit($id) {
+        $data = array();
+        $data['article'] = Article::findOrFail($id);
+
+        $categories = Category::all();
+        $data['categories'] = $categories;
+
+        $tags = Tag::all();
+        $data['tags'] = $tags;
+
+        return view('articles.edit', $data);
+    }
+
+    public function update(UpdateArticle $request, $id) {
+        $article = Article::findOrFail($id);
+
+        $validated = $request->validated();
+
+        $article->title = $validated['title'];
+        $article->body = $validated['body'];
+        $article->updated_at = Now();
+        $article->categories()->sync($validated['category']);
+        $article->tags()->sync($validated['tags']);
+        $article->save();
+
+        return redirect('articles')->with('success', 'Article updated');
     }
 }

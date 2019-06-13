@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if (Auth::check()) {
+        return redirect('articles');
+    } else {
+        return view('welcome');
+    }
 });
 
 //Auth::routes(['register' => false]);
@@ -22,6 +26,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('articles', 'ArticleController', [
         'only' => ['index', 'show', 'create', 'store', 'update', 'delete']
     ]);
+
+    Route::get('/articles/{id}/edit', 'ArticleController@edit');
 
     Route::resource('categories', 'CategoryController', [
         'only' => ['index', 'show', 'create', 'store', 'update', 'delete']

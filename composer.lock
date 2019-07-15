@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c9178bc34e98bb735d798ffa2c39e12",
+    "content-hash": "85a6deb4e2464030a7e9c0f6e272152d",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -4518,16 +4518,16 @@
         },
         {
             "name": "pipe-dream/laravel",
-            "version": "v0.0.45",
+            "version": "v0.0.75",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pipe-dream/laravel.git",
-                "reference": "5c29ad7ed9e312efbce12bc8507844cb53c20610"
+                "reference": "f7f2fc117438b4d9594bd8907379272326331ec4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pipe-dream/laravel/zipball/5c29ad7ed9e312efbce12bc8507844cb53c20610",
-                "reference": "5c29ad7ed9e312efbce12bc8507844cb53c20610",
+                "url": "https://api.github.com/repos/pipe-dream/laravel/zipball/f7f2fc117438b4d9594bd8907379272326331ec4",
+                "reference": "f7f2fc117438b4d9594bd8907379272326331ec4",
                 "shasum": ""
             },
             "require": {
@@ -4555,7 +4555,7 @@
                 "laravel",
                 "package"
             ],
-            "time": "2019-06-13T09:26:21+00:00"
+            "time": "2019-07-12T09:25:49+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

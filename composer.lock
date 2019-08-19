@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c9178bc34e98bb735d798ffa2c39e12",
+    "content-hash": "c798296f11bb3bdcadfce3ef22466072",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3273,8 +3273,8 @@
             "authors": [
                 {
                     "name": "Tijs Verkoyen",
-                    "email": "css_to_inline_styles@verkoyen.eu",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "css_to_inline_styles@verkoyen.eu"
                 }
             ],
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
@@ -3458,9 +3458,9 @@
             "authors": [
                 {
                     "name": "Marcel Pociot",
+                    "role": "Developer",
                     "email": "marcel@beyondco.de",
-                    "homepage": "https://beyondcode.de",
-                    "role": "Developer"
+                    "homepage": "https://beyondcode.de"
                 }
             ],
             "description": "Symfony Var-Dump Server for Laravel",
@@ -3572,8 +3572,8 @@
             "authors": [
                 {
                     "name": "Filipe Dobreira",
-                    "homepage": "https://github.com/filp",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "homepage": "https://github.com/filp"
                 }
             ],
             "description": "php error handling for cool kids",
@@ -3901,18 +3901,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "email": "sebastian@phpeople.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpeople.de"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
@@ -3948,18 +3948,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "email": "sebastian@phpeople.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpeople.de"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library for handling version information and constraints",
@@ -4230,8 +4230,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
@@ -4281,8 +4281,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "FilterIterator implementation that filters files based on a list of suffixes.",
@@ -4323,8 +4323,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Simple template engine.",
@@ -4372,8 +4372,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Utility class for timing",
@@ -4503,8 +4503,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "The PHP Unit Testing framework.",
@@ -4518,16 +4518,16 @@
         },
         {
             "name": "pipe-dream/laravel",
-            "version": "v0.0.45",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pipe-dream/laravel.git",
-                "reference": "5c29ad7ed9e312efbce12bc8507844cb53c20610"
+                "url": "https://github.com/pipe-dream/laravel-create.git",
+                "reference": "73f3919f7b73cd30ea8ad0212c5274c9ae14c7cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pipe-dream/laravel/zipball/5c29ad7ed9e312efbce12bc8507844cb53c20610",
-                "reference": "5c29ad7ed9e312efbce12bc8507844cb53c20610",
+                "url": "https://api.github.com/repos/pipe-dream/laravel-create/zipball/73f3919f7b73cd30ea8ad0212c5274c9ae14c7cf",
+                "reference": "73f3919f7b73cd30ea8ad0212c5274c9ae14c7cf",
                 "shasum": ""
             },
             "require": {
@@ -4537,13 +4537,13 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "PipeDream\\Laravel\\PipeDreamServiceProvider"
+                        "PipeDream\\LaravelCreate\\LaravelCreateServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "PipeDream\\Laravel\\": "src/"
+                    "PipeDream\\LaravelCreate\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4555,7 +4555,7 @@
                 "laravel",
                 "package"
             ],
-            "time": "2019-06-13T09:26:21+00:00"
+            "time": "2019-08-16T13:03:31+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -5115,8 +5115,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
@@ -5156,8 +5156,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
